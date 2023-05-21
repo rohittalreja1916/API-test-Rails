@@ -16,7 +16,7 @@ bundle install
 - Rails Version 7.0.4.3
 - SqLite Version 1.4
 
-# Usage
+## Usage
 Make Sure you have Proper Ruby and Rails Version Installed.
 
 - Create Database
@@ -44,13 +44,13 @@ Change APi Key in credentials
   rails s
 ```
 
-# Temporary API you can add in Model
+## Temporary API you can add in Model
 - Url: "https://pokemon-unite-pokemons.p.rapidapi.com/pokemon?page=1&pageSize=48"
 - Description: "Pokemon Unite API"
 - Name: "Pokemon Unite"
 - Host: "pokemon-unite-pokemons.p.rapidapi.com"
 
-# Contributing
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
