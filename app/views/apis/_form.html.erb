@@ -1,0 +1,38 @@
+<h1 class='text-center'> <%= action_name.capitalize %> API </h1>
+
+<%= form_with model: api do  |f| %>
+
+  <div class='row mb-5'>
+    <div class='col-sm-4'>
+      <%= f.label :name, class: 'form-label fs-2' %>
+      <%= f.text_field :name, autofocus: true, class: 'form-control form-control-lg' %>
+    </div>
+
+    <div class='col-sm-4'>
+      <%= f.label :url, class: 'form-label fs-2' %>
+      <%= f.text_field :url, autofocus: true, class: 'form-control form-control-lg' %>
+    </div>
+
+    <div class='col-sm-4'>
+      <%= f.label :host, class: 'form-label fs-2' %>
+      <%= f.text_field :host, autofocus: true, class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class='row mb-5'>
+    <div class='col-sm-4'>
+      <%= f.label :description, class: 'form-label fs-2' %>
+      <%= f.text_area :description, autofocus: true, class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class='row mb-5'>
+    <div class='col-sm-4'>
+      <div class='d-flex justify-content-around'>
+        <%= f.submit class: 'btn btn-primary btn-lg shadow' %>
+        <%= link_to 'Cancel', apis_path, class: 'btn btn-danger btn-lg shadow' %>
+      </div>
+    </div>
+  </div>
+
+<% end %>

@@ -1,0 +1,27 @@
+<div class='mb-5'>
+  <%= link_to "New API", new_api_path, class: 'btn btn-primary btn-lg shadow' %>
+</div>
+<div class='row'>
+  <% @apis.each do |api| %>
+    <div class="col-md-6 col-lg-4 mb-3 d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= api.name %></h5>
+          <p class="card-text"><%= api.url %></p>
+          <p class="card-text"><%= api.description %></p>
+          <div class="row">
+            <div class="col-4">
+              <%= link_to 'Show', api_path(api), class: 'btn btn-primary' %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'Edit', edit_api_path(api), class: 'btn btn-primary' %>
+            </div>
+            <div class="col-4">
+              <%= link_to 'Delete', api_path(api), method: :delete, class: 'btn btn-primary' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
